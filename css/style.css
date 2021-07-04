@@ -1,0 +1,171 @@
+body{
+   background-color: #E5FF61;
+   font-family: Verdana, Helvetica, Arial, sans-serif;
+   box-sizing: border-box;
+   font-size: 1.2em;
+}
+
+video{
+   width: 50%;
+   height: 50%;
+}
+
+details{
+   margin-bottom: 10px;
+}
+
+summary{
+   margin-bottom: 10px;
+}
+
+table{
+   border-collapse: collapse;
+}
+
+table,th,td{
+   border: 1px solid black;
+}
+
+input{
+   font-size: inherit;
+}
+
+textarea{
+   font-size: inherit;
+   width: 380px;
+   height: 190px;
+}
+
+.gyengenlato{
+   background-image: url("../kepek/nagyit.png");
+   background-repeat: no-repeat;
+   background-position: right top;
+   background-color: #FF6F4C;
+   width: 350px;
+   height: 75px;
+}
+
+.gyengenlato>a{
+   margin: 10px;
+   color: black;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.gyengenlato>a:hover{
+   text-decoration: underline;
+}
+
+.nagybetu{
+   font-size: 1.3em;
+}
+
+.normalbetu{
+   display: none;
+}
+
+.menu{
+   display: flex;
+   justify-content: center;
+   background-color: #FF6F4C;
+}
+
+.menu>a{
+   display: inline-block;
+   margin: 10px;
+   padding: 2px;
+   border: 2px solid black;
+   border-radius: 5px;
+   background-color: #54C4FF;
+   color: black;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.kipozicional a{
+   position: absolute;
+   left: -9999px;
+}
+
+.kipozicional a:focus{
+   position:static;
+   background-color: white;
+}
+
+.menu>a:hover{
+   background-color: #4DE883;
+}
+
+.kepgyujtemeny{
+   display: flex;
+   flex-direction: row;
+}
+
+.kepgyujtemeny>img{
+   margin: 5px;
+}
+
+.yn{
+   text-align:center;
+}
+
+.viselkedesfigure{
+   margin: auto;
+   margin-top: 10px;
+   height: 300px;
+   width: 300px;
+}
+
+.gombok{
+   display: flex;
+   justify-content: center;
+}
+
+.gombok>input{
+   margin-right: 15px;
+}
+
+@media print{
+   body{
+      font-family:"Times New Roman", Georgia, Palatino, serif;
+      background-color: white;
+      margin: 3cm;
+      font-size: 1em;
+   }
+
+   textarea{
+      border: solid 1px black;
+   }
+   
+   ::placeholder{
+      color: transparent;
+   }
+   
+   :-ms-input-placeholder{ /*Internet explorer*/
+      color: transparent;
+   }
+   
+   ::-ms-input-placeholder{ /*Microsoft Edge*/
+      color: transparent;
+   }
+   
+   .gyengenlato{
+      display: none;
+   }
+   
+   .menu{
+      display: none;
+   }
+   
+   .noprint menu{
+      display: none;
+   }
+   
+   .pagebreak{
+      page-break-before: always;
+   }
+   
+   .gombok{
+      display: none;
+   }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "hu">
+   <head>
+      <link rel="stylesheet" type="text/css" href="css/style.css" title="normal">
+      <link rel="alternate stylesheet" type="text/css" href="css/nagystyle.css" title="nagybetus">
+      <script src="script/styleswitcher.js"></script>
+      
+      <meta charset = "utf-8" data-name="viewport" data-content="width=device-width, initial-scale=1">
+      <title>Kezdőlap</title>
+   </head>
+   
+   <body>
+      <nav class="kipozicional">
+         <a href="#tartalom">Ugrás a tartalomra</a>
+      </nav>
+      
+      <header>
+         <nav class = "gyengenlato">
+            <a class = "nagybetu" href = "#" onclick = "setActiveStyleSheet('nagybetus'); return false;">Nagybetűs változat</a>
+            <a class = "normalbetu" href = "#" onclick = "setActiveStyleSheet('normal'); return false;">Normál változat</a>
+         </nav>
+         
+         <h1>Kezdőlap</h1>
+         <nav class = "menu">
+            <a href = "./index.html">Kezdőlap</a>
+            <a href = "./etetesuk.html">Etetésük</a>
+            <a href = "./eletteruk.html">Életterük</a>
+            <a href = "./viselkedesuk.html">Viselkedésük</a>
+            <a href = "./kozvelemenykutatas.html">Közvéleménykutatás</a>
+         </nav>
+      </header>
+      
+      <main id = "tartalom">
+         <article>
+            <h2>Mi található az oldalon?</h2>
+            <p>Ezen az oldalon tengerimalac tartással kapcsolatos tanácsok találhatók, mint például mivel érdemes etetni őket, hány malacot érdemes tartani, vagy hogy milyen viselkedésre számithatsz tőlük.</p>
+            <p>A fenti menüsor segítségével navigálhatsz az oldalon. Alul olvasható hogy melyik menüponttal miről olvashatsz:</p>
+         
+            <ol>
+               <li><b>Kezdőlap:</b> Visszavezet ide.</li>
+               <li><b>Etetésük:</b> Itt arról olvashatsz hogy mivel szabad es mivel nem szabad etetni a tengerimalacokat. </li>
+               <li><b>Életterük:</b> Itt arról olvashatsz hogy egy tengerimalacnak mikre van szüksége az élőhelyén hogy boldog lehessen, illeteve a malacok nemtől függő viselkedéséről. </li>
+               <li><b>Viselkedésük:</b> Itt a tengerimalacok emberekkel és más malacokkal való általános viselkedéséről olvashatsz. </li>
+               <li><b>Közvéleménykutatás:</b> Itt kitölthetsz egy közvéleménykutatást a tengerimalactartással kapcsolatos preferenciáidról. </li>
+            </ol>
+
+         
+         <div class = "noprint">
+            <p>Alul egy kis kedvcsináló videó látható egy tengerimalacról:</p>
+            <video controls poster ="./kepek/poster.png">
+               <source src = "video/malac.mp4" type = "video/mp4">
+               <source src = "video/malac.ogv" type = "video/ogg">
+               A böngesződ nem tudja lejátszani a videót.
+            </video> 
+         
+            
+               <aside>
+                  <a href = "leiras.xhtml">A videó leírása</a> <br>
+               </aside>
+            </div>
+         </article>
+      </main>
+      
+      <footer class = "noprint">
+         A videó forrása: Youtube.
+      </footer>
+   </body>
+</html>
+

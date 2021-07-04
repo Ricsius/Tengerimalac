@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "hu">
+   <head>
+      <link rel="stylesheet" type="text/css" href="css/style.css" title="normal">
+      <link rel="alternate stylesheet" type="text/css" href="css/nagystyle.css" title="nagybetus">
+      <script src="script/styleswitcher.js"></script>
+      
+      <meta charset = "utf-8" data-name="viewport" data-content="width=device-width, initial-scale=1">
+      <title>Közvéleménykutatás</title>
+   </head>
+   
+   <body>
+      <nav class="kipozicional">
+         <a href="#tartalom">Ugrás a tartalomra</a>
+      </nav>
+      
+      <header>
+         <nav class = "gyengenlato">
+            <a class = "nagybetu" href = "#" onclick = "setActiveStyleSheet('nagybetus'); return false;">Nagybetűs változat</a>
+            <a class = "normalbetu" href = "#" onclick = "setActiveStyleSheet('normal'); return false;">Normál változat</a>
+         </nav>
+         
+         <h1>Közvéleménykutatás</h1>
+         <nav class = "menu">
+            <a href = "./index.html">Kezdőlap</a>
+            <a href = "./etetesuk.html">Etetésük</a>
+            <a href = "./eletteruk.html">Életterük</a>
+            <a href = "./viselkedesuk.html">Viselkedésük</a>
+            <a href = "./kozvelemenykutatas.html">Közvéleménykutatás</a>
+         </nav>
+      </header>
+      
+      <main id = "tartalom">
+         <p>Kérjük töltse ki ezt a kis kérdőívet</p>
+         <form>
+            <p>Milyen nemű malacot tart szívesebben?</p>
+            <p><input type = "radio" name = "NemPref" id = "him"> <label for = "him">Hím</label></p>
+            <p><input type = "radio" name = "NemPref" id = "nos"> <label for = "nos">Nőstény</label></p>
+            <p><input type = "radio" name = "NemPref" id = "np"> <label for = "np">Nincs preferenciám</label></p>
+         
+            <p>Szőrös vagy kopasz malacot tart szívesebben?</p>
+            <p><input type = "radio" name = "Szoros" id = "szor"> <label for = "szor">Szőrös</label></p>
+            <p><input type = "radio" name = "Szoros" id = "kop"> <label for = "kop">Kopasz</label></p>
+            <p><input type = "radio" name = "Szoros" id = "mind"> <label for = "mind">Mindegy</label></p>
+         
+            <p>Milyen színű tengerimalacot szeret a legjobban?</p>
+            <p><input type = "text" maxlength = 30 placeholder = "Legfeljebb 30 karakter"></p>
+         
+            <p>Miért szeretne tengerimalacot tartani?</p>
+            <textarea maxlength = 400 placeholder = "Legfeljebb 400 karakter"></textarea>
+         
+            <p class = "pagebreak">Mivel szokott almozni?</p>
+            <p><input type = "checkbox" name = "Alom" id = "forgacs"> <label for = "forgacs">Forgács</label></p>
+            <p><input type = "checkbox" name = "Alom" id = "pellet"> <label for = "pellet">Pellet</label></p>
+            <p><input type = "checkbox" name = "Alom" id = "egyeb"> <label for = "egyeb">Egyéb</label></p>
+         
+            <div class = "gombok">
+               <input type = "submit" value = "Beküld"> 
+               <input type = "reset" value = "Reset">
+            </div>
+         </form>
+      </main>
+      <footer></footer>
+   </body>
+</html>
+

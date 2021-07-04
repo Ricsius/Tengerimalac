@@ -1,0 +1,29 @@
+@import url('style.css');
+
+body{
+   font-size: 2em;
+}
+
+video{
+   width: 75%;
+   height: 75%;
+}
+
+textarea{
+   font-size: inherit;
+   width: 600px;
+   height: 300px;
+}
+
+.gyengenlato{
+   background-image: url("../kepek/kicsinyit.png");
+}
+
+.nagybetu{
+   display: none;
+}
+
+.normalbetu{
+   display: inline;
+   font-size: 1em;
+}
